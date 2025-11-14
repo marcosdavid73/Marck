@@ -1,0 +1,28 @@
+@startuml
+left to right direction
+actor Administrador
+actor Operador
+actor Afiliado
+
+rectangle Sistema {
+  (Iniciar sesión) as UC01
+  (Gestionar Afiliados) as UC02
+  (Registrar Ingreso) as UC03
+  (Gestionar Alquileres) as UC04
+  (Gestionar Eventos/Calendario) as UC05
+  (Ver Historial y Generar Informe) as UC06
+}
+
+Administrador --> UC01
+Administrador --> UC05
+Administrador --> UC06
+
+Operador --> UC01
+Operador --> UC02
+Operador --> UC03
+Operador --> UC04
+Operador --> UC05
+Operador --> UC06
+
+Afiliado -- UC02
+@enduml

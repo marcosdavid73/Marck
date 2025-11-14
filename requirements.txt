@@ -1,0 +1,4 @@
+# Dependencias para el proyecto
+# Tkinter y sqlite3 son parte de la librería estándar de Python en la mayoría de distribuciones.
+# Añadir aquí librerías adicionales si se usan (ej. Pillow para manejo de imágenes).
+Pillow==10.0.0
